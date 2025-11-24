@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Dashboard - Namma Kudla</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body onload="loadDashboard()">
+<header>
+    <h1>Dashboard Overview</h1>
+</header>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="destinations.html">Destinations</a>
+    <a href="travelstories.html">Travel Stories</a>
+    <a href="events.html">Events & Festivals</a>
+    <a href="dashboard.html">Dashboard</a>
+</nav>
+
+<div class="container dashboard-grid">
+    <div class="card metric">
+        <h3>Total Visitors</h3>
+        <p id="metric-visitors" class="metric-value">—</p>
+    </div>
+    <div class="card metric">
+        <h3>Total Stories</h3>
+        <p id="metric-stories" class="metric-value">—</p>
+    </div>
+    <div class="card metric">
+        <h3>Recent Registrations</h3>
+        <p id="metric-registrations" class="metric-value">—</p>
+    </div>
+
+    <div class="card" style="width: 100%; margin-top: 20px;">
+        <h3>Recent Activities</h3>
+        <ul id="recent-activities" class="activity-list">
+            <!-- JS populates -->
+        </ul>
+    </div>
+
+    <div class="card" style="width: 100%; margin-top: 20px;">
+        <h3>Monthly Activity Overview</h3>
+        <canvas id="dashboard-chart" width="800" height="260"></canvas>
+    </div>
+</div>
+
+</body>
+</html>
